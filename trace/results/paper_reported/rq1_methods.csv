@@ -1,0 +1,7 @@
+method,vsr_percent,aggregation,source_page,source_reference
+Fixed seed repertoire,62.0,five_seed_mean,6,Table 1
+Frozen Q-only,74.0,five_seed_mean,6,Table 1
+Reflexion-style,78.0,single_reference_run,6,Table 1
+Unguided generation,80.0,five_seed_mean,6,Table 1
+Self-Harness-style,86.0,single_reference_run,6,Table 1
+TRACE,93.6,five_seed_mean,6,Table 1

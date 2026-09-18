@@ -1,0 +1,8 @@
+{
+  "assessor": {"role": "Choose or instantiate reusable probes and observe ordinary target responses", "modifies_target_weights": false},
+  "target_agent": {"role": "Respond using its visible request and retained working context", "model_revision": "external_required_input"},
+  "verifier": {"role": "Match canonical response units to protected trial sources and exclude visible-query history", "clinical_normalizer": "external_required_input"},
+  "classifier": {"role": "Deterministic response-state classification for routing only", "determines_exposure": false},
+  "proposer": {"role": "Generate reusable candidate strategies using verified acquisition experience", "maximum_new_tokens_per_call": 512},
+  "router": {"role": "Select among retained strategies using empirical state utility", "learns_during_downstream_evaluation": false}
+}

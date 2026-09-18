@@ -1,0 +1,4 @@
+dataset,successes,trials,vsr_percent,source_page,source_reference
+MIMIC-IV,133,150,88.7,15,Table 8
+eICU,125,150,83.3,15,Table 8
+MIMIC-CXR,121,150,80.7,15,Table 8

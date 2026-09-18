@@ -1,0 +1,8 @@
+method,vsr_percent,source_page,source_reference
+Static one-shot,14.0,15,Table 7
+Static matched-budget,27.6,15,Table 7
+MEXTRA-style probing,39.8,15,Table 7
+Iterative multi-query adaptation,57.2,15,Table 7
+Random strategy routing,65.4,15,Table 7
+Domain-informed no-feedback,69.5,15,Table 7
+Frozen TRACE controller,92.0,15,Table 7

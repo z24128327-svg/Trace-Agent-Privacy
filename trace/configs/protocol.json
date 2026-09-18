@@ -1,0 +1,38 @@
+{
+  "artifact_kind": "method_pseudocode_and_reported_aggregates",
+  "source": "Manuscript section 2.4 and appendices B-F",
+  "acquisition": {
+    "dataset": "MIMIC-III",
+    "trial_split_counts": {"evo": 100, "admit": 100, "shadow": 100},
+    "disjointness_scope": "trajectory IDs",
+    "random_seeds": [7, 13, 21, 42, 66],
+    "generations": 5,
+    "initial_strategy_count": 5,
+    "maximum_repertoire_size": 10,
+    "maximum_proposal_new_tokens": 512,
+    "proposals_per_generation": {"value": 3, "status": "inferred_from_aggregate_budget_and_supported_by_development_configuration"},
+    "utility_alpha": 0.2,
+    "utility_gamma": 0.0,
+    "new_strategy_utility": {"value": 0.0, "status": "local_development_default_not_independently_verified_for_final_runs"},
+    "admission_rule": "strictly greater child VSR on matched D_admit trials",
+    "aar_in_admission": false,
+    "deduplication": {"normalize": "re.sub(r'\\W+', '', text).lower()", "SequenceMatcher_threshold": 0.92},
+    "parent_rule": "one parent by deterministic cyclic traversal",
+    "pruning_rule": "protect seeds; descending maximum state utility; stable existing-order ties",
+    "routing_rule": "descending state utility; ascending strategy-ID ties"
+  },
+  "frozen_evaluation": {
+    "backbones": ["DeepSeek-V3.2", "GPT-4o", "LLaVA-v1.5-7B"],
+    "trials_per_backbone": 50,
+    "shift_datasets": ["MIMIC-IV", "eICU", "MIMIC-CXR"],
+    "trials_per_shift_dataset": 150,
+    "bounded_online_maximum_rounds": 3,
+    "static_one_shot_rounds": 1,
+    "context_token_budgets": [4000, 16000, 25000, 64000],
+    "trace_positions": ["head", "middle", "tail"],
+    "strategy_generation_count": 0,
+    "library_update_count": 0,
+    "q_update_count": 0
+  },
+  "not_specified": ["exact final model revisions", "complete surrogate and proposer decoding manifests", "initial calibration and exact acquisition schedule", "clinical PCMU normalizer", "final frozen artifact hashes", "complete reference/control implementations"]
+}

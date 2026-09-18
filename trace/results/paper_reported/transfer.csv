@@ -1,0 +1,4 @@
+backbone,successes,trials,vsr_percent,source_page,source_reference
+DeepSeek-V3.2,47,50,94.0,8,Table 2 and Table 6
+GPT-4o,46,50,92.0,8,Table 2 and Table 6
+LLaVA-v1.5-7B,47,50,94.0,8,Table 2 and Table 6

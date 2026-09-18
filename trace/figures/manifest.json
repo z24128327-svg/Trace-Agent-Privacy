@@ -1,0 +1,170 @@
+[
+  {
+    "figure": "rq1_methods",
+    "title": "RQ1: mechanism comparison (hatched bars: single reference runs)",
+    "source": "Table 1, p.6",
+    "data_origin": "Manuscript-reported aggregates; no experiments rerun",
+    "formats": [
+      "png",
+      "pdf",
+      "svg"
+    ],
+    "png_dpi": 600
+  },
+  {
+    "figure": "controller_ablation",
+    "title": "Frozen-controller ablations",
+    "source": "Appendix E, p.14",
+    "data_origin": "Manuscript-reported aggregates; no experiments rerun",
+    "formats": [
+      "png",
+      "pdf",
+      "svg"
+    ],
+    "png_dpi": 600
+  },
+  {
+    "figure": "bounded_online",
+    "title": "Bounded-online comparison",
+    "source": "Table 7, p.15",
+    "data_origin": "Manuscript-reported aggregates; no experiments rerun",
+    "formats": [
+      "png",
+      "pdf",
+      "svg"
+    ],
+    "png_dpi": 600
+  },
+  {
+    "figure": "dataset_shift",
+    "title": "Frozen dataset-shift evaluation (150 trials each)",
+    "source": "Table 8, p.15",
+    "data_origin": "Manuscript-reported aggregates; no experiments rerun",
+    "formats": [
+      "png",
+      "pdf",
+      "svg"
+    ],
+    "png_dpi": 600
+  },
+  {
+    "figure": "trace_position",
+    "title": "Trace-placement sensitivity",
+    "source": "Appendix F, p.15",
+    "data_origin": "Manuscript-reported aggregates; no experiments rerun",
+    "formats": [
+      "png",
+      "pdf",
+      "svg"
+    ],
+    "png_dpi": 600
+  },
+  {
+    "figure": "routing_stress",
+    "title": "Frozen routing stress",
+    "source": "Table 8, p.15",
+    "data_origin": "Manuscript-reported aggregates; no experiments rerun",
+    "formats": [
+      "png",
+      "pdf",
+      "svg"
+    ],
+    "png_dpi": 600
+  },
+  {
+    "figure": "low_transfer_runs",
+    "title": "Low-transfer runs (seed identifiers not reported)",
+    "source": "Table 8, p.15",
+    "data_origin": "Manuscript-reported aggregates; no experiments rerun",
+    "formats": [
+      "png",
+      "pdf",
+      "svg"
+    ],
+    "png_dpi": 600
+  },
+  {
+    "figure": "transfer",
+    "title": "Frozen cross-backbone evaluation; line joins categorical models, not a temporal trajectory",
+    "source": "Tables 2 / 6, pp.8,14; 50 trials per backbone",
+    "data_origin": "Manuscript-reported aggregates; no experiments rerun",
+    "formats": [
+      "png",
+      "pdf",
+      "svg"
+    ],
+    "png_dpi": 600
+  },
+  {
+    "figure": "rq1_seeds",
+    "title": "Held-out acquisition results across five seeds",
+    "source": "Table 4, p.14",
+    "data_origin": "Manuscript-reported aggregates; no experiments rerun",
+    "formats": [
+      "png",
+      "pdf",
+      "svg"
+    ],
+    "png_dpi": 600
+  },
+  {
+    "figure": "evolution",
+    "title": "Representative seed-21 development trajectory",
+    "source": "Figure 3 / Table 5, pp.7,14; development split",
+    "data_origin": "Manuscript-reported aggregates; no experiments rerun",
+    "formats": [
+      "png",
+      "pdf",
+      "svg"
+    ],
+    "png_dpi": 600
+  },
+  {
+    "figure": "candidates",
+    "title": "Candidate accounting across five seeds and five generations",
+    "source": "Appendix C, p.13; stages overlap, pruning follows admission",
+    "data_origin": "Manuscript-reported aggregates; no experiments rerun",
+    "formats": [
+      "png",
+      "pdf",
+      "svg"
+    ],
+    "png_dpi": 600
+  },
+  {
+    "figure": "output_controls",
+    "title": "Output controls: residual exposure and benign utility",
+    "source": "Appendix F, p.15; rounded manuscript values retained",
+    "data_origin": "Manuscript-reported aggregates; no experiments rerun",
+    "formats": [
+      "png",
+      "pdf",
+      "svg"
+    ],
+    "png_dpi": 600
+  },
+  {
+    "figure": "context_length",
+    "title": "Frozen context-length sensitivity",
+    "source": "Appendix F, p.15",
+    "data_origin": "Manuscript-reported aggregates; no experiments rerun",
+    "formats": [
+      "png",
+      "pdf",
+      "svg"
+    ],
+    "png_dpi": 600
+  },
+  {
+    "figure": "local_rounds",
+    "title": "Local 200-trial cumulative curve",
+    "source": "Table 8, p.15",
+    "data_origin": "Manuscript-reported aggregates; no experiments rerun",
+    "formats": [
+      "png",
+      "pdf",
+      "svg"
+    ],
+    "png_dpi": 600
+  }
+]

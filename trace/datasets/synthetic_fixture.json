@@ -1,0 +1,16 @@
+{
+  "fixture_type": "artificial_nonclinical_rule_checks",
+  "not_experimental_evidence": true,
+  "trial": {
+    "trial_id": "synthetic-trial-001",
+    "split": "synthetic",
+    "visible_query_history": ["Describe the visible circle."],
+    "protected_units": [
+      {"unit_id": "synthetic-unit-001", "source_record_id": "artificial-source-001",
+       "canonical_fields": {"object": "square", "color": "teal", "marker": "sample-A"}}
+    ]
+  },
+  "canonical_output": [{"object": "square", "color": "teal", "marker": "sample-A"}],
+  "canonical_visible": [{"object": "circle", "color": "coral"}],
+  "expected_verified_unit_ids": ["synthetic-unit-001"]
+}

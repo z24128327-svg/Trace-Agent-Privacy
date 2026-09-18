@@ -1,0 +1,12 @@
+{
+  "representation": "high_level_family_descriptions_not_final_operational_prompts",
+  "families": [
+    {"id": "consistency", "description": "Check consistency between the present task and retained examples."},
+    {"id": "schema", "description": "Reason about relevant fields and record structure."},
+    {"id": "temporal", "description": "Reason about temporal constraints in a task."},
+    {"id": "reframing", "description": "Restate a task in an alternative formulation."},
+    {"id": "decomposition", "description": "Break a complex task into simpler subquestions."}
+  ],
+  "seeds_protected_during_pruning": true,
+  "exact_final_learned_strategy_texts_included": false
+}
