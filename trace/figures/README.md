@@ -27,6 +27,16 @@ Suggested caption:
 \end{figure}
 ```
 
+## Context Length
+
+Use **`context_length.pdf`** for the context-length experiment in Appendix F. The nominal single-column size is 3.6 x 2.5 inches; `context_length.png` is 2160 x 1500 pixels at 600 dpi, with an editable vector SVG also included.
+
+The x-axis is linear in actual token counts, labeled 4k, 16k, 25k and 64k (k = 1000). These budgets are not equally spaced. A thin blue line joins only the four reported observations, with small hollow markers and nonoverlapping value labels. No interpolation model, confidence band or additional observation is introduced. The y-axis starts at zero.
+
+Suggested caption:
+
+> Context-length sensitivity of frozen TRACE. Verified success rate (VSR) is 40.8%, 83.6%, 93.3% and 65.8% at context budgets of 4k, 16k, 25k and 64k tokens, respectively (k = 1000). The acquired strategy repertoire and router remain frozen. Connecting segments guide the eye between measured budgets; no intermediate measurements are implied.
+
 ## Other Figure Captions
 
 Use the title and source in `manifest.json` when writing captions. Preserve these qualifications:

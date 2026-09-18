@@ -174,6 +174,33 @@ def line_plot(name, key, value_key, xlabel, title, source, bundle, manifest):
     finish(figure, name, source, bundle, manifest, title)
 
 
+def context_length(bundle, manifest):
+    rows = load_rows("context_length")
+    positions = numbers(rows, "context_tokens")
+    values = numbers(rows, "vsr_percent")
+    figure, axis = plt.subplots(figsize=(3.6, 2.5))
+    axis.plot(positions, values, "o-", color=COLORS[0], linewidth=1.15,
+              markersize=3.8, markerfacecolor="white", markeredgewidth=0.9,
+              label="TRACE (frozen)", zorder=3)
+    axis.set(xlim=(0, 68000), ylim=(0, 105), xticks=positions,
+             xticklabels=[f"{position / 1000:g}k" for position in positions], yticks=range(0, 101, 20))
+    style_axes(axis)
+    axis.set_xlabel("Context length (tokens)", fontsize=9, fontweight="normal")
+    axis.set_ylabel("VSR (%)", fontsize=9, fontweight="normal")
+    axis.tick_params(labelsize=8, length=3, width=0.6)
+    axis.grid(color="#D9D9D9", linewidth=0.45)
+    for spine in axis.spines.values():
+        spine.set_linewidth(0.6)
+    placements = [(4, -14, "left"), (0, 6, "center"), (0, 6, "center"), (-4, -14, "right")]
+    for position, value, (horizontal, vertical, alignment) in zip(positions, values, placements):
+        axis.annotate(f"{value:.1f}%", (position, value), xytext=(horizontal, vertical),
+                      textcoords="offset points", ha=alignment, fontsize=7.5)
+    legend = axis.legend(loc="lower left", fontsize=7.5, borderpad=0.4, handlelength=2)
+    legend.get_frame().set_linewidth(0.5)
+    finish(figure, "context_length", "Appendix F, p.15", bundle, manifest,
+           "Context-length sensitivity of frozen TRACE; linear token scale, k = 1000")
+
+
 def output_controls(bundle, manifest):
     rows = load_rows("output_controls")
     figure, axis = plt.subplots(figsize=(5.4, 3.1))
@@ -208,8 +235,7 @@ def main():
             horizontal(*chart, bundle, manifest)
         for plot in (cross_backbone, acquisition_seeds, evolution, candidate_accounting, output_controls):
             plot(bundle, manifest)
-        line_plot("context_length", "context_tokens", "vsr_percent", "Context length (tokens)",
-                  "Frozen context-length sensitivity", "Appendix F, p.15", bundle, manifest)
+        context_length(bundle, manifest)
         line_plot("local_rounds", "round", "cumulative_vsr_percent", "Interaction round",
                   "Local 200-trial cumulative curve", "Table 8, p.15", bundle, manifest)
     (OUTPUT / "manifest.json").write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8")

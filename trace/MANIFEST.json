@@ -121,15 +121,15 @@
     },
     {
       "path": "figures/context_length.pdf",
-      "sha256": "a82fb6f454afe6e07d59598ba4362cd8ef1e7a218e623d2de6ae65ffe4f29669"
+      "sha256": "117faf9095ebba40fb01ebe44920008ab8e7468736a14685d535f2320c12092d"
     },
     {
       "path": "figures/context_length.png",
-      "sha256": "68ab165e04545a92ab407bf498476731dce194b39cd730bcbda174f18eccaf31"
+      "sha256": "b3885e6dddade442aecbd320f6f00d95250596e595ac4dd132beb6b77cc2ea91"
     },
     {
       "path": "figures/context_length.svg",
-      "sha256": "ebe42344854ebc4a6f48284c517cccdd8a29b95fba9f7d2a14036decdde298a9"
+      "sha256": "7a6a31791dc108e2e6d6e12d4467ad63fe733f9770afd8c9bc587d16d23d021c"
     },
     {
       "path": "figures/controller_ablation.pdf",
@@ -193,7 +193,7 @@
     },
     {
       "path": "figures/manifest.json",
-      "sha256": "759b922efd7173cbea16fa056d11cfc7a04387410c0e24f9de7e602c7d8dc33e"
+      "sha256": "0eb5d9cff1ef7aef3a236cdacf3837b7859199015ce4e50489a5910b3fccb7e1"
     },
     {
       "path": "figures/output_controls.pdf",
@@ -209,7 +209,7 @@
     },
     {
       "path": "figures/README.md",
-      "sha256": "d54ac4118e0109a85f58aac4ee3f1b29cea7bb5b9fbf74725ccc2a54b9d78804"
+      "sha256": "20972a7ce2aaf1ba9dd981567fd19dafd6b9ad03b5cc6d3c910f9a167631789b"
     },
     {
       "path": "figures/routing_stress.pdf",
@@ -249,7 +249,7 @@
     },
     {
       "path": "figures/TRACE_all_figures.pdf",
-      "sha256": "225cd3e52203209809ac271b6c16ce968b8e71bc6453ed0f8849dfd725d4437f"
+      "sha256": "51e629c909b453daeaa9fd0e7d36b98c875f355768fee622d004816c68ea66ff"
     },
     {
       "path": "figures/trace_position.pdf",
@@ -277,7 +277,7 @@
     },
     {
       "path": "plotting/plot_paper.py",
-      "sha256": "e9433e0299b9be3922bd2a56943d0db713ce93b9bc3828b07fb229c002641bcf"
+      "sha256": "ca4a22a5f6e07bc6993568cf021f6136190ce3cb5d6f1faec78abded40bdc46d"
     },
     {
       "path": "pseudocode/01_trace_algorithm.py",

@@ -145,7 +145,7 @@
   },
   {
     "figure": "context_length",
-    "title": "Frozen context-length sensitivity",
+    "title": "Context-length sensitivity of frozen TRACE; linear token scale, k = 1000",
     "source": "Appendix F, p.15",
     "data_origin": "Manuscript-reported aggregates; no experiments rerun",
     "formats": [
